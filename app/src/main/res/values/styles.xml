@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="editTextForm">
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:layout_marginBottom">40dp</item>
+    </style>
+
+    <style name="butonForm">
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="textFillColor">@android:color/white</item>
+    </style>
+
+    <style name="textTitle">
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:background">@color/purple_500</item>
+        <item name="textFillColor">@android:color/white</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+</resources>

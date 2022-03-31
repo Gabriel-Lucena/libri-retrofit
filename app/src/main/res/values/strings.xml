@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">LIBRI</string>
+    <string name="login">LOGIN</string>
+    <string name="senha">SENHA</string>
+    <string name="logar">ENTRAR</string>
+    <string name="cadastrarUsuario">CADASTRE-SE</string>
+    <string name="nome">NOME</string>
+    <string name="sobrenome">SOBRENOME</string>
+    <string name="email">E-MAIL</string>
+    <string name="cadastrarUsuario2">CADASTRAR</string>
+    <string name="cadastroUsuarioTitulo">CADASTRO DE USUÁRIO</string>
+    <string name="fields_message">TODOS OS CAMPOS DEVEM SER PREENCHIDOS</string>
+    <string name="create_user_message_title">CRIAÇÃO DE USUÁRIO</string>
+    <string name="create_user_message">VOCÊ ESTÁ SE CADASTRANDO NO APP LIBRI</string>
+    <string name="save">SALVAR</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="saved">USUÁRIO CRIADO COM SUCESSO!</string>
+    <string name="telaFeed">TELA DE FEED</string>
+    <string name="login_fail">DADOS DE LOGIN INCORRETOS OU INEXISTENTES</string>
+    <string name="cadastroLivro">CADASTRO DE LIVRO</string>
+    <string name="titulo">TÍTULO</string>
+    <string name="descricao">DESCRIÇÃO</string>
+    <string name="foto">FOTO</string>
+    <string name="cadastrarLivro">CADASTRAR</string>
+    <string name="edicaoLivro">EDIÇÃO DE LIVRO</string>
+    <string name="alterarLivro">EDITAR</string>
+</resources>
