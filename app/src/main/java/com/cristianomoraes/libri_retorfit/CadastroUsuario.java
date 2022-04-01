@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.cristianomoraes.libri_retorfit.model.Usuario;
 import com.cristianomoraes.libri_retorfit.remote.RouterInterface;
 
+import retrofit2.Call;
+
 public class CadastroUsuario extends AppCompatActivity {
 
     /*
@@ -70,12 +72,36 @@ public class CadastroUsuario extends AppCompatActivity {
              *  Passar os dados para a APIREST
              */
 
-
-
+             routerInterface = APIUtil.getUsuarioInterface();
 
 
         });
 
-
+        /*
+         *  Fim do método onCreate
+         */
     }
+
+    /**
+     * Implementação do método de Call addUsuario
+     */
+
+    public void addUsuario(Usuario usuario) {
+
+        Call<Usuario> call = routerInterface.addUsuario();
+
+        call.enqueue( new Callback<Usuario> () {
+
+            @override
+            public void onResponse(Call<Usuario> call, Response<Usuario> response) {
+                Toast.makeText(CadastroUsuario.this, "Usuário cadastrado com sucesso", Toast.LENGTH_SHORT).show();
+            }
+
+            @override
+            public void onFailure(Call<Usuario> call, Throwable t) {
+                Log.d("Erro-API", t.getMessage());
+            }
+        }
+    }
+
 }
