@@ -1,15 +1,20 @@
 package com.cristianomoraes.libri_retorfit;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.cristianomoraes.libri_retorfit.model.Usuario;
+import com.cristianomoraes.libri_retorfit.remote.APIUtil;
 import com.cristianomoraes.libri_retorfit.remote.RouterInterface;
 
 import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class CadastroUsuario extends AppCompatActivity {
 
@@ -72,8 +77,8 @@ public class CadastroUsuario extends AppCompatActivity {
              *  Passar os dados para a APIREST
              */
 
-             routerInterface = APIUtil.getUsuarioInterface();
-
+            routerInterface = APIUtil.getUsuarioInterface();
+            addUsuario(usuario);
 
         });
 
@@ -88,20 +93,20 @@ public class CadastroUsuario extends AppCompatActivity {
 
     public void addUsuario(Usuario usuario) {
 
-        Call<Usuario> call = routerInterface.addUsuario();
+        Call<Usuario> call = routerInterface.addUsuario(usuario);
 
-        call.enqueue( new Callback<Usuario> () {
+        call.enqueue( new Callback<Usuario>() {
 
-            @override
+            @Override
             public void onResponse(Call<Usuario> call, Response<Usuario> response) {
                 Toast.makeText(CadastroUsuario.this, "Usuário cadastrado com sucesso", Toast.LENGTH_SHORT).show();
             }
 
-            @override
+            @Override
             public void onFailure(Call<Usuario> call, Throwable t) {
                 Log.d("Erro-API", t.getMessage());
             }
-        }
+        });
     }
 
 }

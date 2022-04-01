@@ -12,6 +12,6 @@ public interface RouterInterface {
      * Rota de inserção de usuário
      */
 
-    @POST("/usuario/inserir")
+    @POST("/usuario/inserir/")
     Call<Usuario> addUsuario(@Body Usuario usuario);
 }
