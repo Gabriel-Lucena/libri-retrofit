@@ -9,10 +9,11 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        style="@style/textTitle"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FEED DE LIVROS" />
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 </LinearLayout>
