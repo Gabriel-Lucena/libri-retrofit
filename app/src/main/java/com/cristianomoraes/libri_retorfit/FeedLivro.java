@@ -1,10 +1,12 @@
 package com.cristianomoraes.libri_retorfit;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -45,7 +47,7 @@ public class FeedLivro extends AppCompatActivity {
          * Executa a chamada à rota de listagem de livros
          */
 
-        Call<List<Livro>> call = routerInterface.getLivros();
+        Call<List<Livro>> call = routerInterface.getLivro();
 
         call.enqueue(new Callback<List<Livro>>() {
             @Override
@@ -83,9 +85,11 @@ public class FeedLivro extends AppCompatActivity {
 
     }   // Fim do método onCreate
 
+
     /*
      * Classe de adapter da RecyclerView
      */
+
 
     private class LivroAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
@@ -169,6 +173,67 @@ public class FeedLivro extends AppCompatActivity {
                 /*
                  * Ação de clique para editar livro e excluir livro
                  */
+
+                itemView.setOnClickListener(view -> {
+
+                    /*
+                     *  setMessage -> título da caixa de alerta
+                     *
+                     *      Parâmetros:
+                     *
+                     *          1 - Título
+                     *
+                     *  setPositiveButton -> Define uma opção de ação
+                     *
+                     *      Parâmetros:
+                     *
+                     *          1 - Título
+                     *          2 - Ação
+                     *
+                     *  setNegativeButton -> Define uma opção de ação
+                     *
+                     *     Parâmetros:
+                     *
+                     *          1 - Título
+                     *          2 - Ação
+                     */
+
+                    AlertDialog.Builder alertDialog = new AlertDialog.Builder(FeedLivro.this)
+                            .setMessage("Escolha a ação que deseja!")
+                            .setPositiveButton(
+                                    "Alterar", (dialog1, witch) -> {
+
+
+                                    }
+                            )
+                            .setNegativeButton("Excluir", (dialog1, witch) -> {
+
+                                        routerInterface = APIUtil.getUsuarioInterface();
+
+                                        Call<Livro> call = routerInterface.deleteLivro(idLivro);
+
+                                        call.enqueue(new Callback<Livro>() {
+
+                                            @Override
+                                            public void onResponse(Call<Livro> call, Response<Livro> response) {
+
+                                                Toast.makeText(FeedLivro.this, "Livro excluído com sucesso", Toast.LENGTH_SHORT).show();
+
+                                            }
+
+                                            @Override
+                                            public void onFailure(Call<Livro> call, Throwable t) {
+
+                                            }
+
+                                        });
+                                    }
+
+                            );
+
+                    alertDialog.show();
+
+                });
 
 
             } // Fim do construtor de LivroViewHolder

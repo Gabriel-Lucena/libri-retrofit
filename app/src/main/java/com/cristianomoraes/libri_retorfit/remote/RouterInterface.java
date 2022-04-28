@@ -7,8 +7,10 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 
 public interface RouterInterface {
 
@@ -20,13 +22,16 @@ public interface RouterInterface {
     Call<Usuario> addUsuario(@Body Usuario usuario);
 
     /*
-     * Rota de livros
+     * Rotas de livros
      */
 
     @POST("/livro/")
     Call<Livro> addLivro(@Body Livro livro);
 
     @GET("/livro/")
-    Call<List<Livro>> getLivros();
+    Call<List<Livro>> getLivro();
+
+    @DELETE("/livro/{idLivro}")
+    Call<Livro> deleteLivro(@Path("idLivro") int Idlivro);
 
 }
