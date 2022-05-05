@@ -18,7 +18,7 @@
             style="@style/textTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/book_registration_title" />
+            android:text="@string/edicaoLivro" />
 
         <EditText
             android:id="@+id/txtTitulo"
@@ -44,11 +44,11 @@
             android:hint="@string/book_registration_photo" />
 
         <Button
-            android:id="@+id/btnCadastrarLivro"
+            android:id="@+id/btnEditarLivro"
             style="@style/butonForm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/book_registration_button" />
+            android:text="@string/editarLivro" />
 
     </LinearLayout>
 

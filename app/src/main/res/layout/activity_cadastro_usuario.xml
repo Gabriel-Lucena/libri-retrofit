@@ -19,14 +19,14 @@
             style="@style/textTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cadastroUsuarioTitulo" />
+            android:text="@string/user_registration_title" />
 
         <EditText
             android:id="@+id/txtNome"
             style="@style/editTextForm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nome"
+            android:hint="@string/user_registration_name"
             android:inputType="text" />
 
         <EditText
@@ -34,7 +34,7 @@
             style="@style/editTextForm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/sobrenome"
+            android:hint="@string/user_registration_surname"
             android:inputType="text" />
 
         <EditText
@@ -42,7 +42,7 @@
             style="@style/editTextForm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/email"
+            android:hint="@string/user_registration_email"
             android:inputType="textEmailAddress" />
 
         <EditText
@@ -51,14 +51,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="@string/login" />
+            android:hint="@string/user_registration_login" />
 
         <EditText
             android:id="@+id/txtSenha"
             style="@style/editTextForm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/senha"
+            android:hint="@string/user_registration_password"
             android:inputType="textPassword" />
 
         <Button
@@ -66,7 +66,7 @@
             style="@style/butonForm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cadastrarUsuario2" />
+            android:text="@string/user_registration_button" />
 
     </LinearLayout>
 

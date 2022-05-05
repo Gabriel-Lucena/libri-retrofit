@@ -204,6 +204,11 @@ public class FeedLivro extends AppCompatActivity {
                             .setPositiveButton(
                                     "Alterar", (dialog1, witch) -> {
 
+                                        Intent intent = new Intent(FeedLivro.this, AlterarLivro.class);
+
+                                        intent.putExtra("idLivro", idLivro);
+
+                                        startActivity(intent);
 
                                     }
                             )

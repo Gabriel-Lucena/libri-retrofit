@@ -10,6 +10,7 @@ import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
 public interface RouterInterface {
@@ -32,6 +33,12 @@ public interface RouterInterface {
     Call<List<Livro>> getLivro();
 
     @DELETE("/livro/{idLivro}")
-    Call<Livro> deleteLivro(@Path("idLivro") int Idlivro);
+    Call<Livro> deleteLivro(@Path("idLivro") int idLivro);
+
+    @GET("/livro/id/{idLivro}")
+    Call<List<Livro>> getLivroId(@Path("idLivro") int idLivro);
+
+    @PUT("/livro/")
+    Call<Livro> updateLivro(@Body Livro livro);
 
 }

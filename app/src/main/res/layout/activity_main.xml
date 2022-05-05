@@ -14,7 +14,7 @@
         style="@style/editTextForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/login"
+        android:hint="@string/user_registration_login"
         android:minHeight="48dp" />
 
     <EditText
@@ -22,7 +22,7 @@
         style="@style/editTextForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/senha"
+        android:hint="@string/user_registration_password"
         android:inputType="textPassword"
         android:minHeight="48dp" />
 
@@ -31,13 +31,13 @@
         style="@style/butonForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/logar" />
+        android:text="@string/user_login" />
 
     <Button
         android:id="@+id/btnCadastrarUsuario"
         style="@style/butonForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cadastrarUsuario" />
+        android:text="@string/user_registration" />
 
 </LinearLayout>

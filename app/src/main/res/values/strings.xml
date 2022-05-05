@@ -1,27 +1,68 @@
 <resources>
     <string name="app_name">LIBRI</string>
-    <string name="login">LOGIN</string>
-    <string name="senha">SENHA</string>
-    <string name="logar">ENTRAR</string>
-    <string name="cadastrarUsuario">CADASTRE-SE</string>
-    <string name="nome">NOME</string>
-    <string name="sobrenome">SOBRENOME</string>
-    <string name="email">E-MAIL</string>
-    <string name="cadastrarUsuario2">CADASTRAR</string>
-    <string name="cadastroUsuarioTitulo">CADASTRO DE USUÁRIO</string>
-    <string name="fields_message">TODOS OS CAMPOS DEVEM SER PREENCHIDOS</string>
-    <string name="create_user_message_title">CRIAÇÃO DE USUÁRIO</string>
-    <string name="create_user_message">VOCÊ ESTÁ SE CADASTRANDO NO APP LIBRI</string>
-    <string name="save">SALVAR</string>
-    <string name="cancel">CANCELAR</string>
-    <string name="saved">USUÁRIO CRIADO COM SUCESSO!</string>
-    <string name="telaFeed">TELA DE FEED</string>
-    <string name="login_fail">DADOS DE LOGIN INCORRETOS OU INEXISTENTES</string>
-    <string name="cadastroLivro">CADASTRO DE LIVRO</string>
-    <string name="titulo">TÍTULO</string>
-    <string name="descricao">DESCRIÇÃO</string>
-    <string name="foto">FOTO</string>
-    <string name="cadastrarLivro">CADASTRAR</string>
-    <string name="edicaoLivro">EDIÇÃO DE LIVRO</string>
-    <string name="alterarLivro">EDITAR</string>
+
+    /**
+    * Cadastro de usuário
+    **/
+
+    <string name="user_registration_title">Cadastro De Usuário</string>
+
+    <string name="user_registration_name">Nome</string>
+    <string name="user_registration_surname">Sobrenome</string>
+    <string name="user_registration_email">E-mail</string>
+    <string name="user_registration_login">Login</string>
+    <string name="user_registration_password">Senha</string>
+
+    <string name="user_registration_button">Cadastrar</string>
+
+    /**
+    * Login de usuário
+    **/
+
+    <string name="user_login">Entrar</string>
+
+    <string name="user_registration">Cadastre-se</string>
+
+    /**
+    * Cadastro de livro
+    **/
+
+    <string name="book_registration_title">Cadastro de Livro</string>
+
+
+    <string name="book_registration_book_title">Título</string>
+    <string name="book_registration_description">Descrição</string>
+    <string name="book_registration_photo">Foto</string>
+
+    <string name="book_registration_button">Cadastrar</string>
+
+    /**
+    * Toast
+    **/
+
+    <string name="fields_message">Todos os campos devem estar preenchidos!</string>
+    <string name="user_registration_message_title">Criação de Usuário</string>
+    <string name="create_user_message">Você está de cadastrando no app libri!</string>
+    <string name="login_fail">Dados de login incorretos!</string>
+    <string name="user_saved">Usuário criado com sucesso!</string>
+
+
+    /**
+    * Feed de Livro
+    **/
+
+    <string name="telaFeed">Feed</string>
+
+
+    /**
+    * Edição de Livro
+    **/
+
+    <string name="edicaoLivro">Edição de Livro</string>
+    <string name="editarLivro">Editar</string>
+
+    <string name="save">Salvar</string>
+    <string name="cancel">Cancelar</string>
+
+
 </resources>
