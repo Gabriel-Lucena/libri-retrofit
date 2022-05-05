@@ -1,6 +1,7 @@
 package com.cristianomoraes.libri_retorfit;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -218,6 +219,8 @@ public class FeedLivro extends AppCompatActivity {
                                             public void onResponse(Call<Livro> call, Response<Livro> response) {
 
                                                 Toast.makeText(FeedLivro.this, "Livro excluído com sucesso", Toast.LENGTH_SHORT).show();
+
+                                                startActivity(new Intent(FeedLivro.this, FeedLivro.class));
 
                                             }
 
