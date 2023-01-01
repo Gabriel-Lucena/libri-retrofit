@@ -16,24 +16,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
-            android:name=".CadastroLivro"
-            android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-        </activity>
-
-        <activity
-            android:name=".CadastroUsuario"
-            android:exported="true">
-
-
-        </activity>
-
-        <activity
-            android:name=".FeedLivro"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,11 +25,28 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+<!--        <activity-->
+<!--            android:name=".CadastroUsuario"-->
+<!--            android:exported="true">-->
 
-        </activity>
+
+<!--        </activity>-->
+
+<!--        <activity-->
+<!--            android:name=".FeedLivro"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+<!--        <activity-->
+<!--            android:name=".MainActivity"-->
+<!--            android:exported="true">-->
+
+<!--        </activity>-->
 
     </application>
 

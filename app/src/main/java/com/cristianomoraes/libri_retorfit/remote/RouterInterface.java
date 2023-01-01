@@ -22,6 +22,9 @@ public interface RouterInterface {
     @POST("/usuario/")
     Call<Usuario> addUsuario(@Body Usuario usuario);
 
+    @GET("/usuario/log/{login}/{senha}")
+    Call<Usuario> realizarLogin(@Path("login") String login, @Path("senha") String senha);
+
     /*
      * Rotas de livros
      */

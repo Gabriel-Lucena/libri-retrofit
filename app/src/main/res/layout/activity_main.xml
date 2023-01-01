@@ -27,7 +27,7 @@
         android:minHeight="48dp" />
 
     <Button
-        android:id="@+id/btnLogar"
+        android:id="@+id/btnLogin"
         style="@style/butonForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
